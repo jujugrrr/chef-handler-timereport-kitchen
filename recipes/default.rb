@@ -4,6 +4,7 @@ end
 
 chef_handler 'Chef::Handler::TimeReport' do
   source "#{node["chef_handler"]["handler_path"]}/timereport.rb"
+  arguments :debug => true
   action :enable
 end
 

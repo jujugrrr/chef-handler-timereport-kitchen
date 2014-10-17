@@ -1,5 +1,5 @@
 cookbook_file "#{node["chef_handler"]["handler_path"]}/timereport.rb" do
-  source 'timereport.rb'
+  source 'chef-handler-timereport/lib/chef/handler/timereport.rb'
 end
 
 chef_handler 'Chef::Handler::TimeReport' do
